@@ -1,0 +1,19 @@
+// set up
+@import "vendors/normalize";
+
+@import "layout/layout";
+
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+
+// common styles
+@import "modules/common.scss";
+@import "modules/header.scss";
+@import "modules/footer.scss";
+@import "modules/form.scss";
+
+// partials
+@import "partials/button.scss";
+@import "partials/main-nav.scss";
+@import "partials/text.scss";
+@import "partials/form.scss";

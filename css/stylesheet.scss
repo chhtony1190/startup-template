@@ -1,0 +1,102 @@
+@import "compass/css3";
+
+$custom_font: 'Roboto';
+	$package_font: $custom_font, Helvetica, sans-serif;
+
+$text_color: #333;
+$title_color: #333;
+$link_color: #333;
+	$link_hover_color: #333;
+
+$width_layout: 1024px;
+
+@mixin init_font() {
+	font-family: $custom_font;
+	font-weight: 400;
+	font-size: 16px;
+	color: $text_color;
+	line-height: 100%;
+	margin: 0 0 15px 0;
+}
+@mixin clearfix() {
+	visibility: hidden; display: block; font-size: 0; content: '.'; clear: both; height: 0;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+html {}
+	body {font-family: $package_font; color: #000; font-weight: 400;}
+		p {@include init_font();}
+		p:last-child {margin-bottom: 0;}
+
+::-moz-selection {background-color: #231F20; color: #FFF;}
+::selection {background-color: #231F20; color: #FFF;}
+
+a {text-decoration: none; color: $link_color;}
+a:hover, a:focus, a:active {color: $link_hover_color; outline: none;}
+
+hr {border: 0; height: 1px; margin: 15px 0 45px 0; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));}
+
+.clearfix:after{visibility: hidden; display: block; font-size: 0; content: '.'; clear: both; height: 0;}
+.ie8 .clearfix {zoom: 1;}
+
+/* Title
+--------------------------------------------------------------------------------------- */
+h1, h2, h3, h4 {@include init_font; position: relative;}
+h1 a, h2 a, h3 a, h4 a {}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {}
+h1 {margin-bottom: 25px;}
+h2 {margin-bottom: 25px;}
+h3 {margin-bottom: 25px;}
+h4 {margin-bottom: 25px;}
+
+/* Transitions
+--------------------------------------------------------------------------------------- */
+/*{-webkit-transition: all 0.20s linear; transition: all 0.20s linear;}*/
+
+/* Opacity
+--------------------------------------------------------------------------------------- */
+/*{opacity: 0.80; filter: alpha(opacity=80);}*/
+
+/* Custom form */
+@import "partials/form";
+/* Custom text formatting */
+@import "partials/text";
+/* Custom button */
+@import "partials/button";
+/* Main navigation */
+@import "partials/main_nav";
+
+/* Box layout
+--------------------------------------------------------------------------------------- */
+.parent_box {position: relative;}
+	.child_box {position: relative;}
+		.child_box .row {@include box-sizing(border-box); width: $width_layout; position: relative; margin: 0 auto;}
+		.child_box .row:after {visibility: hidden; display: block; font-size: 0; content: '.'; clear: both; height: 0;} * html .child_box .row {zoom: 1;} *:first-child+html .child_box .row {zoom: 1;}
+
+	.child_box.content {}
+		.child_box.content .row {padding: 25px 0;}
+			.child_box.content .row h2 {margin-bottom: 45px; font-weight: 800;}
+
+/* Free CSS
+--------------------------------------------------------------------------------------- */
+
+
+/* ==================================================================================== */
+/*  Media Queries for Responsive Design  */
+/* ==================================================================================== */
+
+/* tablette paysage */
+@media only screen and (max-width: 1024px) {
+}
+
+/* tablette portrait */
+@media only screen and (max-width: 767px) {
+}
+
+/* mobile paysage */
+@media only screen and (max-width: 480px) {
+}
+
+/* mobile portrait */
+@media only screen and (max-width: 320px) {
+}

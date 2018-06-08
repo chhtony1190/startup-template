@@ -1,0 +1,35 @@
+*:focus {outline: 0;}
+fieldset {border: 1px solid #000; font-size: 12px; margin-bottom: 10px; padding: 5px;}
+legend {border: 1px solid #999; color: #000; font-size: 14px; font-weight: bold; padding: 3px;}
+label {display: block; color: #000; font-family: 'Open Sans'; font-weight: 400; text-transform: none; font-size: 13px; margin-bottom: 10px; text-align: left; line-height: 100%;}
+
+input {
+	display: block; font-family: 'Open Sans'; font-weight: 400; font-size: 14px; color: #000; width: 100%; padding: 2px 0; border: none; border-bottom: 1px solid #8a8b8d;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	/*-webkit-appearance: caret; -moz-appearance: caret;*/
+}
+	input:focus {}
+	input[placeholder] {}
+	::-webkit-input-placeholder {color: #666666; opacity: 1;}
+	:-moz-placeholder {color: #666666; opacity: 1;}
+	::-moz-placeholder {color: #666666; opacity: 1;}
+	:-ms-input-placeholder {color: #666666; opacity: 1;}
+	input[type=submit] {cursor: pointer;}
+	input[type=checkbox] {float: left; margin-top: 3px; margin-right: 8px; width: auto;}
+	input[type=radio] {float: left; margin-top: 2px; margin-right: 8px; width: auto !important;}
+	input[type=file] {background: none; margin: 0; padding: 0; box-shadow: none;}
+button {
+	cursor: pointer; border: none; display: block; margin: 0;
+	border: 0 none; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;
+	-webkit-appearance: button;
+	*overflow: visible;
+}
+button:hover {}
+	button::-moz-focus-inner {border: 0; padding: 0;}
+select {-webkit-appearance: none; cursor: pointer; display: block; font-style: none; font-family: 'Open Sans'; font-weight: 400; font-size: 14px; padding: 7px 12px; color: #666666; width: 100%; background: #FFF; border-radius: 2px; border: 1px solid #e1e1e1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+	select:focus {border: 1px solid #666666;}
+textarea {
+	display: block; background: #3d3d3d; padding: 10px 12px; border-radius: 3px; border: 1px solid #3d3d3d; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: 'Open Sans'; font-weight: 400; font-style: none; font-size: 14px; color: #FFF; height: 120px; width: 100%; resize: vertical !important;
+	/*-webkit-appearance: caret; -moz-appearance: caret;*/
+}
+textarea:focus {border: 1px solid #FFF;}
