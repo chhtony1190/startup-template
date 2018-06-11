@@ -7,15 +7,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 		<!-- Favicon -->
-		<!-- <link rel="shortcut icon" href="img/favicon.ico" /> -->
-		<title>Modèle dev</title>
-
-		<!-- Google font -->
-		<!-- Open Sans -->
-		<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> -->
-
-		<!-- Roboto, Regular : 400, Bold : 700 -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<title>Starter Template</title>
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css" />
@@ -30,9 +23,9 @@
 
 	<body>
 
-		<div class="parent_box">
+		<div class="parent-box">
 
-			<div class="child_box content">
+			<div class="child-box content">
 				<div class="row">
 
 					<?php
@@ -41,16 +34,25 @@
 
 					?>
 
+					<h1>Teste</h1>
+
+					<p>
+						<a href="index.php">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+					<a href="#">teste</a>
+
 				</div>
 			</div>
 
 		</div>
 
 		<!-- ///////////////////////////// -->
+
 		<!-- JQuery -->
-		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 		<!-- Main js -->
-		<!-- <script src="js/main.js"></script> -->
+		<script src="js/main.js"></script>
 	</body>
 </html>

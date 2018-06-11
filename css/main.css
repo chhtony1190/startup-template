@@ -353,13 +353,38 @@ td,
 th {
   padding: 0; }
 
-body {
+.parent-box {
+  position: relative; }
+  .parent-box .child-box {
+    position: relative; }
+    .parent-box .child-box .row {
+      width: 1140px;
+      position: relative;
+      margin: 0 auto;
+      box-sizing: border-box; }
+      .parent-box .child-box .row::after {
+        display: block;
+        visibility: hidden;
+        content: '.';
+        font-size: 0;
+        clear: both;
+        height: 0; }
+    .parent-box .child-box.content .row {
+      padding: 25px 0;
+      border: 1px solid red; }
+
+html body {
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
-  font-weight: 400; }
+  font-weight: normal; }
 
 p:last-child {
   margin-bottom: 0; }
+
+a {
+  text-decoration: underline; }
+  a:hover, a:focus, a:active {
+    outline: none; }
 
 ::-moz-selection {
   background-color: #231F20;
@@ -368,12 +393,6 @@ p:last-child {
 ::selection {
   background-color: #231F20;
   color: #FFF; }
-
-a {
-  text-decoration: none; }
-
-a:hover, a:focus, a:active {
-  outline: none; }
 
 hr {
   border: 0;
@@ -388,9 +407,6 @@ hr {
   content: '.';
   clear: both;
   height: 0; }
-
-.ie8 .clearfix {
-  zoom: 1; }
 
 /* Title
 --------------------------------------------------------------------------------------- */
@@ -415,45 +431,8 @@ h4 {
 /* Opacity
 --------------------------------------------------------------------------------------- */
 /*{opacity: 0.80; filter: alpha(opacity=80);}*/
-/* Box layout
---------------------------------------------------------------------------------------- */
-.parent_box {
-  position: relative; }
-
-.child_box {
-  position: relative; }
-
-.child_box .row {
-  width: 1250px;
-  position: relative;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.child_box .row:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '.';
-  clear: both;
-  height: 0; }
-
-* html .child_box .row {
-  zoom: 1; }
-
-*:first-child + html .child_box .row {
-  zoom: 1; }
-
-.child_box.content .row {
-  padding: 25px 0;
-  border: 1px solid red; }
-
 /* Free CSS
 --------------------------------------------------------------------------------------- */
-/* ==================================================================================== */
-/*  Media Queries for Responsive Design  */
-/* ==================================================================================== */
 /* Buttons
 --------------------------------------------------------------------------------------- */
 /*.btn-1 {}*/

@@ -1,10 +1,11 @@
 // set up
 @import "vendors/normalize";
 
-@import "layout/layout";
-
 @import "utils/variables.scss";
 @import "utils/mixins.scss";
+
+// layout
+@import "layout/layout";
 
 // common styles
 @import "modules/common.scss";
