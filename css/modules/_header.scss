@@ -30,6 +30,8 @@ hr {border: 0; height: 1px; margin: 15px 0 45px 0; background-image: linear-grad
 
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: '.'; clear: both; height: 0;}
 
+* {box-sizing: border-box;}
+
 /* Title
 --------------------------------------------------------------------------------------- */
 h1, h2, h3, h4 {position: relative;}
